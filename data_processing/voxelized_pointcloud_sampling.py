@@ -10,7 +10,7 @@ import argparse
 import random
 import traceback
 
-ROOT = 'shapenet/data/'
+ROOT = '/data/stirumal/datasets/shapenet'
 
 def voxelized_pointcloud_sampling(path):
     try:

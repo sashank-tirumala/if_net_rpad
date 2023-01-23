@@ -4,7 +4,7 @@ import multiprocessing as mp
 from multiprocessing import Pool
 import trimesh
 
-INPUT_PATH = 'shapenet/data'
+INPUT_PATH = '/data/stirumal/datasets/shapenet'
 
 def to_off(path):
 

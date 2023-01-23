@@ -4,6 +4,7 @@ from models import training
 import argparse
 import torch
 
+breakpoint()
 # python train.py -posed -dist 0.5 0.5 -std_dev 0.15 0.05 -res 32 -batch_size 40 -m
 parser = argparse.ArgumentParser(
     description='Run Model'
@@ -39,7 +40,7 @@ if args.model == 'ShapeNetPoints':
 if args.model == 'SVR':
     net = model.SVR()
 
-
+breakpoint()
 
 train_dataset = voxelized_data.VoxelizedDataset('train', voxelized_pointcloud= args.pointcloud, pointcloud_samples= args.pc_samples, res=args.res, sample_distribution=args.sample_distribution,
                                           sample_sigmas=args.sample_sigmas ,num_sample_points=50000, batch_size=args.batch_size, num_workers=30)

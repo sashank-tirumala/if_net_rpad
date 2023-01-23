@@ -8,7 +8,7 @@ import argparse
 import os
 import traceback
 
-ROOT = 'shapenet/data'
+ROOT = '/data/stirumal/datasets/shapenet'
 
 
 def boundary_sampling(path):

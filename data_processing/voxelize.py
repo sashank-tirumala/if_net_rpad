@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    ROOT = 'shapenet/data'
+    ROOT = '/data/stirumal/datasets/shapenet'
 
     p = Pool(mp.cpu_count())
     p.map(partial(voxelize, res=args.res), glob.glob( ROOT + '/*/*/'))

@@ -1,3 +1,6 @@
+import sys, os
+sys.path.append(os.getcwd())
+
 import trimesh
 import numpy as np
 from data_processing.libmesh.inside_mesh import check_mesh_contains
